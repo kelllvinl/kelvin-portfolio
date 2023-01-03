@@ -37,16 +37,9 @@
             >
               <i class="fab fa-github"></i>
             </button>
-            <!-- <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('behance')"
-              v-tooltip.bottom="'behance'"
-            >
-              <i class="fab fa-behance"></i>
-            </button> -->
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
+              @click="open(passwd)"
               v-tooltip.bottom="'Resume'"
             >
               <i class="fa fa-file"></i>
@@ -80,7 +73,6 @@ export default {
       name: info.name,
       linkedin: info.links.linkedin,
       github: info.links.github,
-      behance: info.links.behance,
       resume: info.links.resume
     };
   },
@@ -92,9 +84,6 @@ export default {
           break;
         case "github":
           window.open(this.github, "_blank");
-          break;
-        case "behance":
-          window.open(this.behance, "_blank");
           break;
         case "resume":
           window.open(this.resume, "_blank");

@@ -69,5 +69,6 @@ export default {
 .title {
   font-size: 30px;
   font-weight: 500;
+  /* font-family: myCat; */
 }
 </style>
